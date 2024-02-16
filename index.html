@@ -13,19 +13,81 @@
 <body>
     <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
         <!-- play Now -->
-        <section>
-            <div class="flex flex-col gap-3 min-h-screen items-center justify-center text-white">
-                <h1 class="text-8xl ">ALPHABET CLASH</h1>
+        <section id="home-section">
+            <div class="flex flex-col gap-5 min-h-screen items-center justify-center text-white">
+                <h1 class="text-8xl font-bold ">ALPHABET CLASH</h1>
             <p>Unleash Your Keyboard Kung Fu:press"Enter" to Play</p>
-            <button class="btn text-black">Play Now</button>
+            <button onclick="play()" class="btn text-black">Play Now</button>
             </div>
             
         </section>
         <!-- game section -->
-        <section></section>
+        <section id="play-section" class="hidden">
+            <div>
+
+                <div>
+                    <div class="flex justify-center  pt-16">
+                        <div class="artboard artboard-horizontal phone-4 bg-[#FFFFFFB3] border-8 rounded-lg border-neutral-950"><span id="alphabet" class="text-8xl font-bold flex justify-center  items-center uppercase">Y</span></div>
+                    </div>
+                </div>
+                <!-- keybourd -->
+                <div class=" flex flex-col items-center justify-center mt-20">
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                      </div>
+                </div>
+                <div class="flex justify-between mx-32 mt-7">
+                    <button class="btn btn-square">
+                       Live
+                      </button>
+                      <button class="btn btn-square ">
+                        Score
+                      </button>
+                </div>
+            </div>
+        </section>
         <!-- score -->
-        <section></section>
+        <section class="hidden">
+            <div class="text-white  flex flex-col justify-center items-center min-h-screen gap-6 ">
+                <div class="bg-[rgba(255,255,255,0.2)] space-y-6 p-8 rounded-xl text-center">
+                    <h1 class="text-5xl"><span class="text-5xl font-bold">Score:</span> 14</h1>
+                <button class="btn">Play Again</button>
+                <p class="font-bold">Practice will make you Pro</p>
+                </div>
+            </div>
+        </section>
     </main>
-    
+    <script src="utility.js"></script>
+    <script src="alpha-clash.js"></script>
 </body>
 </html>
