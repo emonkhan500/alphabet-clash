@@ -21,7 +21,12 @@ function show(element){
     
 // }
 
+// id diye value set 
 
+function setElementValueById(elementId,value){
+    const element=document.getElementById(elementId)
+    element.innerText=value
+}
 
 function randomAlphabet(){
     const alphabrtString='abcdefghijklmnopqrstuvwxyz'
