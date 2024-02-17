@@ -1,15 +1,6 @@
 //   final score
 
-function finalScore(){
-  const previousScore= document.getElementById('score')
-  const lastScore= previousScore.innerText
-  setElementValueById('final',lastScore)
 
- 
-  return lastScore 
-    
-
-}
 
 // keybourd function
 function buttonPressed(event) {
@@ -76,8 +67,6 @@ function playAgain() {
 
 
 
-//   final score
-
 
 
 
@@ -95,6 +84,19 @@ function playAgain() {
 // // set life
 // currentLifeElement.innerText = newLife;
 }
+//   final score
+
+function finalScore(){
+  const previousScore= document.getElementById('score')
+  const lastScore= previousScore.innerText
+  setElementValueById('final',lastScore)
+
+ 
+  return lastScore 
+    
+
+}
+
 
 // common function theke
 function continueGame() {
